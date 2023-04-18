@@ -1,0 +1,152 @@
+
+---VARIABLES---
+var name = "test" : creates a global variable (Don't use var it is not used anymore) 
+let name = "test" : Creates a local variable that is changable 
+const name = "test" : Creates a constant variable that you dont change 
+when updating a variable dont use let just use the assignment operator ex: name = "ryan"
+remeber when naming all variables use camelCase
+
+---DATA TYPES---
+number: any integer or floating point ex: 15
+string: any words or letters surrounded by double or sigle quotes and back ticks ex: "hello" strings are imutable
+booleans: true or false 
+undefined: when a data type has nothing in it ex: let Newundefined = undefined
+null: null is similar to undefined but it is defined but set to nothing ex: let name = null
+array: list of any data types ex: let newArray = []
+object: an object type ex: let newObject = {}
+
+---STRING OPERATIONS---
+let nameGreet = greeting + name; this adds all the things together 
+let tempString = `hello, ${name}` this allows you to add a variable into the set string inside of the {} (must use the back tick) this is called template literal 
+.trim(): removes whitespace before or after the string 
+.startWith('str'): returns true or false if it starts with something 
+.toUpperCase(): turns to all upper case
+.toLowerCase(): turns to all lower case
+.includes('str'): returns true or false if it includes the string 
+.replace()
+.split(","): splits a string into an array by the included value
+.join(''): join an array into a string 
+
+---RUNNING JS---
+javascript typically runs on the browser to run it from the command line we use node.JS
+to run in terminal use code: node myFile.js (with a bash terminal not powershell)
+
+---CONDITIONALS---
+=== is known as a strict equals it is used to show if two things are completly equal.
+the common conditionals are if, else if, else and switch
+these are the main usages:
+if (age > age2) {
+    console.log(age)
+} else if (age < age2) {
+    console.log(age2)
+} else {
+    console.log(name)
+}
+there is another way to do conditional statements using ternaries
+ex: 
+---LOGICAL OPERATORS---
+>   : Greater than
+<   : Less than
+>=  : Greater than or equal to
+<=  : less than or equal to
+=== : strict equals
+!== : not equal to
+&&  : and 
+||  : or
+!   : not
+!(x && y): nand
+!(x || y): nor
+If we compare a string versus a number ex: 2 > "ryan" it will 
+    turn the string to a number and because ryan is 4 characters ryan is greater than 2
+
+---LOOPS---
+for-loops: for (let i = 0; i < 5; i++){code goes here}
+while-loops: while (x < 50){code goes here x++} you must add the increment or the code could run forever 
+you can loop through a string by using for (let i of string ){console.log(i)}
+it works the same with arrays aswell ex: for (let i of array ){console.log(i)}
+you can also use for in loops which will loop the index of the array not the specific value ex: for (let i in array ){console.log(array[i])}
+
+---ARRAYS---
+arrays are very similar to lists in python and they are set up the same way as you would a variable
+ex: let newArray = [1,2,3,4,5] 
+you can index an array the same way ass python by calling the array and indexing it 
+ex: newArray[0] and remeber the first in the array starts with 0 and increments up.
+.push() : allows you to add an item the the end of the array ex: array.push("name") | ["jo","frank"] -> ["jo","frank", "name"]
+.pop() : this allows you to remove the last item in the array ex: array.pop() | [1,2,3] -> [1,2]
+.findIndex() : this is a way to find the index of a item in an array ex: array.findIndex("jo")
+.indexOf() : another way to find the index of a certain item in an array ex: array.indexOf("jo")
+.shift() : removes the first item in the array ex: array.shift() | array.shift() | [1,2,3] -> [2,3]
+.unshift() : allows you to add an item to the beginning of the array ex: array.unshift("name") | ["jo","frank"] -> ["name","jo","frank"]
+.slice() : makes a copy of the array to a variable ex: array.slice(0,3) first argument is the start postion, second argument is the final postion
+.splice() : takes three arguments but doesnt require them 1. the start positon 2. how many items to remove 3. any values to replace at index
+spread : you can use the spread operator to copy the whole array to a new one ex: let copy = [...array] |this will copy the array in the copy
+.length : returns the length of the array(all items in the array)
+
+---EXTRA---
+typeof : checks the type of the variable you give it ex: console.log(typeof variable)
+
+---BUILT IN FUNCTIONS---
+Number(num) : turns your variable into the number data type (can only work with "12" numbers or true, false)
++num : this is the short hand for converting to a number data type
+parstInt(num) : it is a little more forgiving and will try to find the number in the string
+String(str) : will convert almost anything into a string 
+"" + 12 : another way to convert to string because it concatinates it 
+
+---Functions---
+function name(parameters){function block}: this is how you set up a function 
+arrow functions: (parameters) => {function block} or you can do it without the {} ex: (a, b) => a + b
+when returning multiple values you need to return an array ex: return [a, b]
+function expression: const fun1 = param => {function block} this sets a variable to the function 
+function declaration: function name(param){function block} this declares a function 
+when using arrow functions they are basically a variable and cant be called before they are assigned
+most of the times when you need to reuse a function many times use function declaration
+
+---OBJECTS---
+objects are enclosed with {} they have key:value pairs.
+ex: const dog = {
+    name: "joe"
+    bark: function(param){function block}
+}
+you can even have functions as the value for the key 
+accessing values using destructuring: let {name} = dog (this will create a variable named name with the value of the dogs name)
+you can also destructure multiple variables at once let {name, age, color} = dog and it will set all those variables to the dogs properties
+you can also rename the variable by adding a colon let {age: joeAge} = dog and the variable will be called joeAge
+when you want to loop through the properties you would use for (let attributes in dog){} that allows you to loop through
+you can add new properties to a object by using dog.nameOfProperty = "name" or dog[nameOfProperty] = "name"
+when passing a value in to an object through a function or for loop you have to use [] notation. ex: function getValue(obj, prop){return obj[prop]}
+you can remove properties from an object by writing: delete dog.name
+
+---CLASSES---
+classes are ways to create objects. they are basically object factories.
+it allows you to make as many objects as you want that have the same properties and methods. 
+methods are created by making a function the class but not puting the function key word.
+these classes are very similar to python classes they have constructors that are basically __init__
+and this.name is the same as self.name and any functions after the constructor are the methods 
+they are made like this:
+    class Dog {
+        constructor(name, color){
+            this.name
+            this.color
+        }
+        bark(){
+            console.log("woof woof")
+        }
+    }
+creating objects from classes look like this:
+let dog1 = new Dog("Joe", "Brown")
+let dog2 = new Dog("Frank", "Blonde")
+when creating a class which will take all the attributes of a different class we use:
+    class Puppy extends Dog {
+        constructor(name, color){
+            super(name,color)
+        }
+    } it will then inherit all the other methods and properties of the previous class super is the same as python you have to add the attributes through super
+by extending from a class that is creating a child class and the one you extend from is the parent class 
+
+
+
+
+
+
+
+

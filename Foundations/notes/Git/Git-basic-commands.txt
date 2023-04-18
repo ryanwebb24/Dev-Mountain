@@ -1,0 +1,7 @@
+git init : intializes the git repository
+git add : add some files to be tracked
+git commit : commit the changed file to the repository git commit -m "whatever"
+git status : show the status of the current directory
+git log : show a list of all the commits
+git diff : what has changed since last commit 
+

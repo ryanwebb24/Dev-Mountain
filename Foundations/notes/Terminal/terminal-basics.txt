@@ -1,0 +1,10 @@
+cd : this means change directory which means change the folder you are in 
+ls : lists all the things inside the current director
+touch : creates a file. you can create files in any folder as long as you call the file path in the
+	 touch command ex: touch filePath/file.txt
+mkdir : makes a directory(folder)
+rm : deletes a file
+rmdir : delets a directory
+ls --color : shows all the things in the directory color coding them so they are easier to see. 
+	you can also see the contents of any file as long as you provide the file path after the ls
+pwd : print working directory. it shows your current file path 

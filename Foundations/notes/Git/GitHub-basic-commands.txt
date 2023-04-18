@@ -1,0 +1,4 @@
+
+git clone REPO_URL: copy a repo from GitHub and put it on my machine
+git remote -v: show names of repos on GitHub that I can push to
+git push REPO_NAME: put my local commits on GitHub
