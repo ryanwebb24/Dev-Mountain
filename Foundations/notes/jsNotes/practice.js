@@ -43,8 +43,6 @@ class Puppy extends Dog{
         super(name,color)
     }
 }
-
-
 let dog1 = new Dog("joe","brown")
 let puppy1 = new Puppy("frank")
 

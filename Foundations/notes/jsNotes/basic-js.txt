@@ -82,6 +82,10 @@ ex: newArray[0] and remeber the first in the array starts with 0 and increments 
 spread : you can use the spread operator to copy the whole array to a new one ex: let copy = [...array] |this will copy the array in the copy
 .length : returns the length of the array(all items in the array)
 
+---SET---
+sets are an array that has all unique characters. sets are technically an object in javascript.
+to create a set we do: let newSet = New Set(array) : this will get rid of all non unique charaters and put the unique ones in the set
+
 ---EXTRA---
 typeof : checks the type of the variable you give it ex: console.log(typeof variable)
 
@@ -143,7 +147,18 @@ when creating a class which will take all the attributes of a different class we
     } it will then inherit all the other methods and properties of the previous class super is the same as python you have to add the attributes through super
 by extending from a class that is creating a child class and the one you extend from is the parent class 
 
+---HIGHER ORDER FUNCTIONS---
+higher order functions are functions that take another function as a parameter or also returns a function. 
+ex: function fun1(func){console.log(func)} this just prints the function passed in to the func1
+ex: function createAdder(x) { return function(y){return x + y}} this is a function factory that returns a function that will add whatever you want
 
+---HIGHER ORDER ARRAY METHODS---
+.map(): creates a new array with the adjusted values that your callback function produces
+.filter(): filters a given array. the call back function must return a true false statement
+.forEach(): loops though the elements of an array using a callback function(a conditional statement)
+the callback function used in the array method has 3 arguments: element(the value), index(the location of the value), array(the array)
+the call back technically doesnt need the arguments but they are important
+.reduce(): this has two main arguments accumulator and the current value 
 
 
 
