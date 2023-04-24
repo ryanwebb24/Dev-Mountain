@@ -1,0 +1,36 @@
+---DESIGN---
+desing is usually woven throught the creation of your products and not just one step it is constant.
+design is not a choice it can make or break a company
+
+User experience: how a person feels why interacting with a product or interface
+    > a large reason for what makes a good experience is how easy and non frustrating a product is 
+Usability: 
+    > communicate what users shoudl draw there attention to
+        color, size, placement
+    > Provide feedback to reward success
+        progress bars, loading, completed step 2 of 3
+    > Hide non-critical options unless needed
+        hide behind modals, dropdowns , mouseovers
+    > interactivity should be self evident
+        make it obvious you can click there
+Trust:
+    > quiet calm and concise design looks trustworthy and inviting, it can create credibility.
+    > beautiful delight: beautyinspires exploration and use
+Good Design:
+    > Consistant
+        good designs are consistant to make people comfortable
+    > Visible
+        you should be able to see the good design 
+    > Learnable
+        users should be able to learn how it works easily
+    > Predictable
+        if it is predictable it makes it easier to learn
+Visual Design:
+    > Contrast
+        contrast creates interest
+    > Repition
+        helps make things look like they belong together
+    > Alignment
+        every element in a design  should have connection to another element of the design 
+    > Proximity
+        place related items together 
