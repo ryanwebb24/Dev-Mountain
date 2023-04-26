@@ -1,0 +1,41 @@
+---HTML---
+definition: html stands for hypertext markup language. 
+    Markup languages are used to organize text in logical sections
+syntax: the way the lanuage is coded
+    > Element: an element is from one opening tag to a closing tag (some tags don't need closing tags)
+        ex: <p> paragraph </p>
+    > Attributes: these are used to configure the element(if you dont explicitly add attributes it will give the defaults)
+        to override the default you do the following syntax attr="value"
+        ex: <input required="true">
+    > Common Elements: 
+        <div></div> divides the page into groups 
+        <p></p> paragraph
+        <h1></h1> header 1
+        <img/> image 
+        <a> anchor also known as a link
+    > doctype: this should always be included telling the browser to expect html in the file
+        ex: <!DOCTYPE html>
+    > head: contains the title and all important data that is stored about the document using meta
+        meta: important meta tags: description, keywords, charset, author, veiwport
+        meta will help the browser see important information that can help search engines and other things see important info
+    > body: body contains all of the elements rendered on the screen
+    > comments: <!-- --> this is how you make a comment 
+block elements: elements whos box automatically takes up the entire width of its parent
+    ex: div, h1, p
+inline elements: elements who only take up the minimum space necessary it will not start a new line
+    ex: button, input, span
+classes: classes allow you to gropu tags together 
+    you can give each tag multiple classes by adding a space ex: <p class="content navbar" that tag is in the content class and the navbar class
+ID: id attributes allow us to target one specific element. make sure these names are deiscriptive. You should only have one id for a tag and one tag for an id
+    you can set tha same id to mutiple tags but that is bad you should avoid that
+
+
+
+
+
+
+---SEMANTIC HTML---
+Semantic html will make your html more readable and eaier to work with. 
+ex: <header>,<footer>,<form>,<section>,<article>
+it can also boost your SEO(search engine optimization). you should use the semantic tag when you can 
+make sure to attach labels to your inputs elements. you should also use a button tag whenever you have an onclick event

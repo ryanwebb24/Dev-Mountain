@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  background-color: #33343c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-list {
+  display: inline;
+}
+.topnav {
+  background-color: #494b5a;
+  padding: 5px;
+  font-size: 18pt;
+}
+.topnav-right {
+  float: right;
+  padding: 5px;
+}
+.navlink {
+  color: white;
+  text-decoration: none;
+}
+#home-image {
+  width: 95%;
+  height: 500px;
+  object-fit: cover;
+}
+#playoffs {
+  color: white;
+  margin: 15px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: flex;
+}
+
+#col-1 {
+  flex: 1;
+}
+
+#col-2 {
+  flex: 1;
+}

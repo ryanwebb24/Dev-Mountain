@@ -1,0 +1,54 @@
+---CSS---
+definition: css stands for cascading style sheets. This is used to style the website to make it look good.
+    you can select elements that you want to change and style them
+    css is read from top to bottom. Declerations lower in the file will override the ones above it
+    when working with ids and classes the one with more specificity will override. 
+    overriding list from lowest to highest: tagname <- selctor <- class <- id <- inline styling 
+tagname: you can select the tagname as a way to edit a certain tag
+    ex: button, h1{
+        background-color: green;
+        margin: 20px;
+    }
+    you can use commas to seperate multiple tagnames to edit all fo them
+combinators: 
+    > : the child selector this will taget whatever is inside of the element 
+    ' ': the descendant selector, this selects child, grandchild, etc.
+inline styling: you can style your html right inside the html document
+    ex: <button style="background-color: green;">
+internal css:
+    ex: <style> ccs code </style>
+external css: this is considered best practice
+    ex <link rel="stylesheet" href=".css">
+text manipulation:
+    >font-size
+    >font-weight
+    >color
+    >line-height
+    >text-align
+    >font-family
+    >letter-spacing
+    > and much more
+classes:
+    when accessing a class in css you use dot notation ex: .navbar {}
+id:
+    when accessing a id in css you use # notation ex: #navbar-search {
+Postion:
+    > static: regular element, this is the default
+    > relative: moves an element ralative to its original position
+    > fixed: move an element ralative to the view port( it will be stuck in one positon on the screen no matter the movement) ex: navbar
+    > absolute: postions the element relative to the nearest ancestor
+    > sticky: postion will toggle between fixed and relative based on scroll position
+    > right
+    > left 
+    > top
+    > bottom
+display:
+    > block: stack vertically and by defautl take up the entire width
+    > inline: stack horizontally taking up only the needed space not allowing you to change the dimensions
+    > inline-block: stacks horizontally but allows you to change height and width
+    > flex: after display is set to flex there are a lot of options to customize
+        > flex-direction: row(default), row-reverse, column, column-reverse
+        > flex-wrap: no-wrap(default), wrap 
+        > justify-content: allows you to justify all the content in your flexbox 
+        > align-items: it is perpendicular to the justify-content depending on what is is set to
+
