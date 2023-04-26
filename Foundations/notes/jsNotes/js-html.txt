@@ -1,0 +1,22 @@
+there are two ways to include javascript in your html files the inline way and the linking of a script.
+the perfered way to do it is to link the script of your js file
+ex: <script src="index.js"><script>
+
+---DOM---
+dom stands for document object model. When the browser sees the the html file it will create a copy and store it in the browser
+the copy of that html is called the dom. so you can manipulate the dom to change what the browser shows.
+
+---CODE EXAMPLES---
+document.querySelector('id') will find the first item that is being queried and return it
+document.querySelectorAll('id') will get all of the elements that match the id which is basically an array 
+but technically it is called a Nodelist
+document.createElement('p') will create a new element in the html
+document.getElementById('id') will get the element to the specific id
+when you have already found your Node element(the queryselected item) you can do:
+    .innerHTML it will show what is in ther specified tag
+    .remove() will remove the element from the DOM
+    .textContent will get the text content of the element (very similar to innerHTML)
+    .setattribute('type','value') can set certain attributes of an element
+    .classList is an object where you can access all of the classes of a certain element
+    .appendChild(element) will add a child element to the specified element
+
