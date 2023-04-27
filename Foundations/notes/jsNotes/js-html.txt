@@ -34,7 +34,22 @@ Types of events:
     > scroll
     > mouseover
     > submit
+    > doubleclick
 
 in the event call back function you can call the event as the parameter and it will give you a whole list of things that can be used
 so in the call back you can put event.preventDefault() and it will stop the default events 
 and event.target can show the element that the event happened to as an object.
+
+---ASYNCHRONOUS PROGRAMMNG---
+ASYNCHRONOUS prgramming is a way to program so that mutiple things can run at the same time. Things could slow down a lot if you are only running one thing at a time. so we use promises and other things.
+
+---AXIOS---
+we can use a promise object to handle data coming back from the server or backend . we will then us a then method.
+ex: axios.get("http://www.example.com/people").then(response => {console.log(response.data)})
+this will get the response and when we get that we get the data. 
+if there is an error when we get a response then we need a way to see that so we use the .catch() method 
+ex: axios.get("http://www.example.com/people").then(response => {console.log(response.data)}).catch(err => console.log(err))
+the .get will use a url as an agrument and will make a request to recieve some data
+.post will take two arguments the url and an object for the body of the request
+.put takes two arguments the url and the body to edit the data in the backend and returns a response
+.delete takes one argument the url and will delete the data in the backend and returns a response
