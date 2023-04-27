@@ -20,3 +20,21 @@ when you have already found your Node element(the queryselected item) you can do
     .classList is an object where you can access all of the classes of a certain element
     .appendChild(element) will add a child element to the specified element
 
+---EVENT BASED PROGRAMMING---
+    >even source/event target
+        the button sensor etc.
+    >event emitter/event dispatcher
+        tells the entire system if something happens
+    >event listener and event handlers
+        listens for an event to happen and the hadles that by running code
+    >event loop
+        the browser is running a forever loop that is constantly looking for if something happens 
+Types of events:
+    > click 
+    > scroll
+    > mouseover
+    > submit
+
+in the event call back function you can call the event as the parameter and it will give you a whole list of things that can be used
+so in the call back you can put event.preventDefault() and it will stop the default events 
+and event.target can show the element that the event happened to as an object.
