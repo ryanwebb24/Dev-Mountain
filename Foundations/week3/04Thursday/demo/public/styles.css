@@ -21,7 +21,15 @@ body {
   #age-form {
     height: 70px;
   }
-  
+  #delete-form {
+    height: 70px;
+  }
+  #delete-form > button {
+    background-color:red;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+}
   section {
     margin-left: 40px;
   }

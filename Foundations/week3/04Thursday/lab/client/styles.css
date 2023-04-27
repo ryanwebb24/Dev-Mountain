@@ -1,0 +1,12 @@
+#repeat-text {
+    font-size: xx-large;
+    display: none;
+}
+#hello-text {
+    font-size: xx-large;
+    display: none;
+}
+.hover-over {
+    background-color: rgb(52, 52, 52);
+    color: white;
+}

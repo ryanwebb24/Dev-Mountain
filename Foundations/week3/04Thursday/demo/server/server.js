@@ -70,5 +70,7 @@ app.post('/character', (req, res) => {
     res.status(200).send(characters)
     id++
 })
+//app.delete('/character')
+
 
 app.listen(4000, () => console.log('up on 4000'))
