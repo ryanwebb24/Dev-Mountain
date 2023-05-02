@@ -1,0 +1,22 @@
+--- http requests---
+http stands for hyper text trasnfer protocol
+basic way of sending info across the web
+https is the same but the data is encrypted the s stands for secure.
+    > GET: most basic just asks for data
+    > POST: create new resource
+    > PUT: change current data
+    > DELETE: delete data
+
+---URL---
+parts of a url:
+    > protocol: http://
+    > Domain: example.com
+    > port: :5000
+    > path: /example/test/name
+    > query params: ?input=cats&name=joe
+
+---DNS---
+    stands for domain name system 
+    a domain is a mask basically a way for people to more easily read the ip address
+    an ip adress is the actual name of the server you access ex: 192.168.1.1
+
