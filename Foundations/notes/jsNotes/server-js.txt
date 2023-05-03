@@ -1,8 +1,0 @@
----NPM---
-npm stands for node package manager. With npm you can install code from the web and ude it in your code
-to set up a npm project you start by puttin gin the terminal npm init -y
-this will initialize your npm project you can then install all your needed npm packages
-
----EXPRESS---
-request: the request object will have a lot of things in it but the important ones will be params body and query
-response: .status sends the status code you give it ex:(404 (means page not found)) .send() sends the response

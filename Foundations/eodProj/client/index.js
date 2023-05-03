@@ -1,4 +1,3 @@
-let tasks = [{name: 'Take out the trash', priority: 'Medium'}, {name: 'Make dinner', priority: 'High'}]
 
 let tasksDisplay = document.querySelector('#task-display')
 let newTaskForm = document.querySelector('#new-task-form')
@@ -43,4 +42,7 @@ const addTask = (event) => {
 
 newTaskForm.addEventListener('submit', addTask)
 
-buildTasks(tasks)
+const getTasks = () => {
+  axios.get('http://localhost:5000/api/tasks')
+  .then(res => buildTasks(res.data))
+}

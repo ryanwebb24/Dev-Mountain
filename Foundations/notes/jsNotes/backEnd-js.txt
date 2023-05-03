@@ -1,0 +1,21 @@
+---BASICS---
+when designing your full-stack application it is important to start with the backend so you can know what information
+your frontend needs to send and have
+---NPM---
+npm stands for node package manager. With npm you can install code from the web and ude it in your code
+to set up a npm project you start by puttin gin the terminal npm init -y
+this will initialize your npm project you can then install all your needed npm packages
+
+---EXPRESS---
+end points:
+    these are where the http requests are recieved and then proccessed 
+GET request:
+    request: the request object will have a lot of things in it but the important ones will be params body and query
+    response: .status sends the status code you give it ex:(404 (means page not found)) .send() sends the response
+POST request:
+    post has the same req and res but we will use them differently
+    req.body will show the object that you get from the http request 
+    with post requests we will need to make sure the data the front end has sent is valid data and then if its not valid 
+    we need to send an error status code so the frontend knows that the data was wrong
+delete request:
+    can use a body object that can delete or could just use the route param as the thing that will get deleted
