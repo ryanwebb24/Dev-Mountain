@@ -1,0 +1,18 @@
+---API---
+api stands for application programming interface
+apis provide tons of information and capabilities to developers. You can interact with certain apis using http requests allowing you to talk to other things that the api has.
+the api is basically the send and recieve of the server, it is the part of a server that everyone interacts with.
+
+---REST---
+rest stands for representational state transfer. 
+it is a set of standards for apis, they are:
+    > URL's are uniform and meaningful
+    > client and server are independent of each other 
+        this means they can be written in different languages
+    > http(s) is the protocol
+    > each request is independent
+documentation is key when working with and making apis. there needs to be a list of available endpoints,
+tells how to format requests, what you will get back as data.
+
+---POSTMAN---
+post man is a way to interact with apis it is basically a way to simulate a front end and see the data that the api will send 
