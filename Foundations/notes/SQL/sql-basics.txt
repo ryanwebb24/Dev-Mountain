@@ -28,3 +28,18 @@
 > NOT NULL: means that this has to have data in it
 > UNIQUE: this is like the primary key and but it is not the primary identifier it just has to have unique data
 > DEFAULT: allows you to set the default data 
+
+---JOIN---
+> how to set up: start with select with all columns you want then you do from this will be from the main table you want
+    then you use join this is the other table you want then add the on with the main table foreign key = to the other table foreign key
+> ex: SELECT name, employees.dept_code, departments.dept_code, departments 
+        FROM employees JOIN departments ON employees.dept_code = departments.dept_code
+> you can also have mulitple joins which can join as many tables as you want
+
+---ALIASES---
+> when dealing with many different names you might want to change the name of the columns or table names 
+    so you can read the data better when you recieve it. So if you have many names in mutiple tables you may want to rename them
+> here is how to set it up, in your select statement you will put the alias you give the name right after it 
+> ex: SELECT artist.name AS artist_name, album.name album_name From ...
+> There were both examples in that one using AS and the other just adding a space between the names.
+    these are both great ways to do it it is up to preference
