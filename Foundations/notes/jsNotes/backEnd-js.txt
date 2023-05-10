@@ -19,3 +19,10 @@ POST request:
     we need to send an error status code so the frontend knows that the data was wrong
 delete request:
     can use a body object that can delete or could just use the route param as the thing that will get deleted
+
+---MVC---
+mvc stands for model view controller
+this is a structure for making good backend design 
+model is where the database and the object-oriented code to represent them
+view is the html templates or js used to create the html
+controller is the section where the backend handles the urls 

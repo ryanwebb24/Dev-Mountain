@@ -1,0 +1,30 @@
+
+---SQL BASICS---
+> sql keywords are convetionally in all caps but are not case sensitive
+> but the names of values in the table are case sensitive
+> strings must use single quotes 
+> dates are stored year month day
+> when setting up a table you set up each row like so: name data_type extra rules
+> CREATE TABLE name will create a table with a name you want
+> DROP TABLE name deletes a table with a name you want
+> INSERT INTO name (key) VALUES (value): this will allows you to insert a row of data into the table 
+> SELECT value FROM name: this will allow you to select whatever data you want from a table (use * to select all)
+> when using select you can add where to the end that will filter the data by the condition you give it
+> example of a good id for a table is: id uuid PRIMARY KEY DEFAULT gen_random_uuid()
+> it is also good to use creation time stamp ex: creation timestamp without time zone NOT NULL DEFAULT (current_timestamp AT TIME ZONE 'UTC'), 
+
+---DATA TYPES---
+> integer: whole numbers
+> Decimal:
+> Float: up to 15 decimals
+> varchar(n): this allows you to set a certain amount that this string can be specified by n
+> text: this is the string data type in sql 
+> serial: integer data type that will automatically increment and be unique
+> uuid: creates a uuid
+>
+
+---EXTRA RULES---
+> PRIMARY KEY: cant be null has to be unique and tells developers that this is the unique identifier
+> NOT NULL: means that this has to have data in it
+> UNIQUE: this is like the primary key and but it is not the primary identifier it just has to have unique data
+> DEFAULT: allows you to set the default data 

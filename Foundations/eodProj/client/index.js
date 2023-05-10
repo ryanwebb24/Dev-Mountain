@@ -19,7 +19,6 @@ const buildTasks = (tasks) => {
         alt='trash'
       />
     `
-
     tasksDisplay.appendChild(taskDiv)
   });
 }
@@ -34,15 +33,18 @@ const addTask = (event) => {
     name: taskNameInput.value,
     priority: taskPriorityInput.value
   }
-
-  tasks.push(newTask)
-
-  buildTasks(tasks)
+  axios.post('http://localhost:5000/api/tasks', newTask)
+    .then(res => {
+      buildTasks(res.data)
+    })
 }
 
 newTaskForm.addEventListener('submit', addTask)
 
 const getTasks = () => {
   axios.get('http://localhost:5000/api/tasks')
-  .then(res => buildTasks(res.data))
+  .then(res => {
+    buildTasks(res.data)})
 }
+
+getTasks()
