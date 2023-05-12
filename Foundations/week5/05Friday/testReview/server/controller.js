@@ -19,6 +19,22 @@ module.exports = {
         .then(dbRes => res.status(200).send(dbRes[0]))
         .catch(err => console.log(err))
     },
+    getFightersList: (req, res) => {
+        sequelize.query(`
+           SELECT id, name FROM fighters 
+        `)
+        .then(dbRes => res.status(200).send(dbRes[0]))
+        .catch(err => console.log(err))
+    },
+    createWeapon: (req, res) => {
+        const {name, power, owner} = req.body
+        sequelize.query(`
+            INSERT INTO weapons (name, power, owner)
+            VALUES ('${name}', ${+power}, ${+owner});
+        `)
+        .then(dbRes => res.status(200).send(dbRes[0]))
+        .catch(err => console.log(err))
+    },
     seed: (req, res) => {
         sequelize.query(`
             DROP TABLE IF EXISTS weapons;
