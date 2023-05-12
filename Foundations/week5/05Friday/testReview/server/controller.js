@@ -35,6 +35,31 @@ module.exports = {
         .then(dbRes => res.status(200).send(dbRes[0]))
         .catch(err => console.log(err))
     },
+    getFightersWeapons: (req, res) => {
+        sequelize.query(`
+            SELECT 
+                fighters.name AS fighter, 
+                fighters.id AS fighter_id, 
+                fighters.power AS fighter_power,
+                fighters.hp, fighters.type,
+                weapons.id AS weapon_id,
+                weapons.name AS weapon,
+                weapons.power AS weapon_power
+            FROM fighters
+            JOIN weapons
+            ON fighters.id = weapons.owner;
+        `)
+        .then(dbRes => res.status(200).send(dbRes[0]))
+        .catch(err => console.log(err))
+    },
+    deleteWeapon: (req, res) => {
+        const {id} = req.params
+        sequelize.query(`
+            DELETE FROM weapons WHERE id = ${+id}
+        `)
+        .then(dbRes => res.status(200).send(dbRes[0]))
+        .catch(err => console.log(err))
+    },
     seed: (req, res) => {
         sequelize.query(`
             DROP TABLE IF EXISTS weapons;

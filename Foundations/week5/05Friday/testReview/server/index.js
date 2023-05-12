@@ -21,7 +21,7 @@ const {
 app.post('/fighter', createFighter)
 app.post('/weapon', createWeapon)
 app.get('/fighters-list', getFightersList)
-// app.get('/fighters-and-weapons', getFightersWeapons)
-// app.delete('/weapon/:id', deleteWeapon)
+app.get('/fighters-and-weapons', getFightersWeapons)
+app.delete('/weapon/:id', deleteWeapon)
 
 app.listen(PORT, () => console.log(`up on ${PORT}`))
