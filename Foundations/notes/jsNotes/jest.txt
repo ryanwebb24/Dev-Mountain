@@ -1,0 +1,8 @@
+jest is a javascript tester
+
+when wanting to run a test file you should either have the file ending in .test.js or the file should be in a folder called __tests__
+
+the documentation for jest is at jestjs
+
+when writing a test you can use expect().toBe() which takes inside expect is the function or thing you want to test
+inside of the toBe function you will have the expected answer of the test 

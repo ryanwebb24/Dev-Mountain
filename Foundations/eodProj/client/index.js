@@ -35,8 +35,10 @@ const addTask = (event) => {
   }
 
   axios.post('http://localhost:5000/api/tasks', newTask)
-    .then(res => {
-      buildTasks(res.data)
+    .then(() => {
+      getTasks()
+      taskNameInput.value = ""
+      taskPriorityInput = "Select Priority"
     })
 }
 
