@@ -1,0 +1,36 @@
+Steps to setup a remote server through aws.
+1. first start by navigating to the ec2 service. (can be done by searching for it in the search bar) that is where you will create the server
+2. then navigate to vpc and find security groups in the left hand dashboard. then you should see create security group
+3. name your security group, then go to inbound rules and add a rule and choose all trafic, source being ipv4, then create rules for ipv6 and my ip
+4. then scroll down to the bottom and click create security group (make sure that the server and the security group is set up on the same server region)
+5. then return to ec2 by searching. then click the orange button that says launch instance
+6. name it then choose an operating system (perferibly ubuntu), do proceed without key pair and then select existing security group and choose the one you just created.
+7. if you want to configure anything else you can but the server is ready to deploy 
+8. then scroll to the bottom and click the yellow button that says launch instance and it will work.
+
+now that you have the server running you need to connect the server to github by creating an ssh and connecting it. (can be found online)
+
+then run following commands
+in the terminal 
+sudo apt update
+
+sudo apt upgrade
+
+sudo apt install nodejs -y
+
+sudo apt install npm -y
+
+sudo npm i -g n
+
+sudo n stable
+
+sudo npm i -g npm
+
+sudo npm i -g nodemon
+
+sudo npm i -g pm2
+nodejs -v
+
+you will now have npm and node
+
+then download your repo and you can run your server file and your server will be accessable to all people with the given aws ip address.
