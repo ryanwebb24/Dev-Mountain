@@ -1,0 +1,91 @@
+body{margin: 0px;}
+#nav-bar {
+    display: flex;
+    width: 100%;
+    height: 75px;
+}
+.nav-btn{
+    position: relative;
+    width: 170px;
+    height: 75px;
+    padding-top: 9.375px;
+}
+.inner-nav-btn {
+    height: 75%;
+    border-right: 2px solid #735751;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#nav-bar a {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #735751;
+}
+#home {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    top: 15px;
+    background-color: #E7D7C1;
+    border-radius: 5px 6px 6px 6px;
+    
+}
+
+/* #home:before {
+    content: '';
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #E7D7C1;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+#home::after {
+    
+    content: '';
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #DBC7AB;
+    position: absolute;
+    left: 170px;
+    top: -20px; 
+}   
+    */
+/* #about {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    top: 15px;
+    background-color: #edd1aa;
+    border-radius: 5px 6px 6px 6px;
+    
+}
+
+#about:before {
+    content: '';
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #edd1aa;
+    position: absolute;
+    top: -20px;
+    left: 170px;
+}
+#about::after {
+    
+    content: '';
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    left: 170px;
+    top: -20px;
+} */
