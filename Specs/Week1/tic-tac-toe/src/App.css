@@ -25,6 +25,9 @@ img {
   border: 2px solid #61dafb;
   box-sizing: border-box;
 }
+.square:hover {
+  background-color: #484848;
+}
 
 .container {
   display: grid;

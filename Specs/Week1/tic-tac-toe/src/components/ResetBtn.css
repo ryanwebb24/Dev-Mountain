@@ -3,5 +3,11 @@ button {
     border-radius: 5px;
     width: 240px;
     height: 40px;
-    
+    border: 2px solid #61dafb;
+    background-color: #232323;
+    color: white;
+}
+
+button:hover {
+    background-color: #484848;
 }

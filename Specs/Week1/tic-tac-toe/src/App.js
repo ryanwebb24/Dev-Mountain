@@ -1,11 +1,11 @@
-import { useState } from "react";
-import "./App.css";
-import Square from "./components/Square";
-import ResetBtn from "./components/ResetBtn";
+import { useState } from "react"
+import "./App.css"
+import Square from "./components/Square"
+import ResetBtn from "./components/ResetBtn"
 
 function App() {
-  const [square, setSquare] = useState(["", "", "", "", "", "", "", "", ""]);
-  const [player, setPlayer] = useState(true);
+  const [square, setSquare] = useState(["", "", "", "", "", "", "", "", ""])
+  const [player, setPlayer] = useState(true)
 
   function calculateWinner(board) {
     let winningLines = [
@@ -17,19 +17,21 @@ function App() {
       [6, 7, 8],
       [0, 4, 8],
       [2, 4, 6],
-    ];
+    ]
     for (let i in winningLines) {
       let [a, b, c] = winningLines[i];
-      if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-        return `${board[a]} won!`;
+      if (board[a] === "O" && board[b] === "O" && board[c] === "O" ) {
+        return "O won!"
+      } else if (board[a] === "X" && board[b] === "X" && board[c] === "X" ) {
+        return "X won!"
       }
     }
-    return "Who will win?";
+    return "Who will win?"
   }
   return (
     <div className="App">
       <div className="container">
-        {square.map((value, index) => {
+      {square.map((value, index) => {
           return (
             <Square
               square={square}
@@ -45,7 +47,7 @@ function App() {
       </div>
       <span>{calculateWinner(square)}</span>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
