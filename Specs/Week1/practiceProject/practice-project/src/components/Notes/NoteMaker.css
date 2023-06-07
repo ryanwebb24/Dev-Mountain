@@ -1,0 +1,12 @@
+form {
+  grid-column: 1;
+  grid-row: 2;
+  width: 500px;
+  height: 250px;
+  justify-content: center;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
