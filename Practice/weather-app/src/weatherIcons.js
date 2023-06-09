@@ -12,4 +12,5 @@ const weatherIcons = {
   "celsius": WiCelsius
 }
 
+
 export default weatherIcons
