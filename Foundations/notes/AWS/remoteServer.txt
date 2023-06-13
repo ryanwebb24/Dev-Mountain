@@ -29,6 +29,7 @@ sudo npm i -g npm
 sudo npm i -g nodemon
 
 sudo npm i -g pm2
+
 nodejs -v
 
 you will now have npm and node

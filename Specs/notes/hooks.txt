@@ -1,0 +1,10 @@
+There are many different types of react hooks. 
+React hooks are defined as simple javascript functions that we can use to isolate the reusable part from a functional component.
+Here are some of the nuilt in hooks:
+  > useState - useState is used to be able to manage a piece of data that changes. you can either change the state or access it.
+    when we use useState we have to destructure some of the things we will need using array destructuring
+    ex: const [input, setInput] = useState(initValue) Here you see that we have input which is our state which we can access like any variable.
+    then you see the setInput which is how you set the new state. it is a function the param that you pass in is the new value you want the state to be
+  > useRef - useRef is used to reference a react element. it will return an object with the current element when called
+  > useEffect -
+  > useReducer -
