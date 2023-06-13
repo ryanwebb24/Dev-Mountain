@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react"
 import "./App.css"
 import axios from "axios"
-// import dotEnv from "dotenv"
-// dotEnv.config()
-// const apiKey = process.env.REACT_APP_API_KEY
+
 
 import Header from "./components/Header"
 import MovieScreen from "./components/MovieScreen"
@@ -19,7 +17,7 @@ function App() {
   function getData() {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=a165e71a5ceadc3b57b917e09ef666cd&language=en-US&page=${page}`
+        `https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_API_KEY}&language=en-US&page=${page}`
       )
       .then((res) => setMovieList(res.data.results))
       .catch((err) => console.log(err))
