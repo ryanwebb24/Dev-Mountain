@@ -1,0 +1,124 @@
+.recipe-screen {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-screen > h1{
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+.recipe-screen > form {
+  /* background-color: grey; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-image > *{
+  border: solid 1px;
+  border-radius: 3px;
+  margin: 5px;
+  height: 25px;
+  font-size: 15px;
+}
+.name-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.type-radio > * > input{
+  border-radius: 3px;
+  margin: 5px;
+  height: 25px;
+  width: 25px;
+}
+.type-radio {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.type-radio > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.serve-time > * {
+  border: solid 1px;
+  border-radius: 3px;
+  margin: 5px;
+  height: 25px;
+  font-size: 15px;
+  width: 25%;
+}
+.serve-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ingredients {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.ingredients-text {
+  display: flex;
+  flex-direction: column;
+}
+.ingredients-text > * {
+  border: solid 1px;
+  border-radius: 3px;
+  margin: 5px;
+  height: 25px;
+  font-size: 15px;
+}
+.ingredients-container {
+  width: 50%;
+  height: 100%;
+}
+
+.add-btn {
+  background-color: #db7533;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: aliceblue;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+.text-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.text-area > textarea{
+  width: 80%;
+  resize: none;
+}
+
+.submit-btn {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #55888a;
+  letter-spacing: 1px;
+  margin: 10px;
+}

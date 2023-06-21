@@ -1,0 +1,110 @@
+.details-page {
+  font-family: "Roboto";
+  width: 100%;
+}
+.food-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+.title  {
+  color: #db7533;
+  font-size: 50px;
+  font-family: "Roboto";
+  position: absolute;
+  z-index: 100; 
+  top: 175px;
+}
+.title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-details{
+  width: 250px;
+  height: min-content;
+  margin: 20px;
+  box-shadow: 0px 5px 5px grey;
+  margin-bottom: 40px;
+}
+.instructions {
+  width: 400px;
+  height: min-content;
+  margin: 20px;
+  box-shadow: 0px 5px 5px grey;
+  margin-bottom: 40px;
+}
+.full-recipe {
+  display: flex;
+  justify-content: space-around;
+}
+.recipe-details > h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+.instructions > h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+.recipe-details > * {
+  margin: 5px;
+}
+.instructions > p {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.loading {
+  height: 500px;
+  width: 50%;
+  text-align: center;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@-ms-keyframes spin { 
+  from { 
+      -ms-transform: rotate(0deg); 
+  } to { 
+      -ms-transform: rotate(360deg); 
+  }
+}
+@-moz-keyframes spin { 
+  from { 
+      -moz-transform: rotate(0deg); 
+  } to { 
+      -moz-transform: rotate(360deg); 
+  }
+}
+@keyframes spin {
+  from { 
+    -moz-transform: rotate(0deg); 
+  } to { 
+      -moz-transform: rotate(360deg); 
+  }
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
