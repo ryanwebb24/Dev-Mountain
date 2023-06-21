@@ -1,0 +1,47 @@
+.ad {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+
+}
+.ad > img {
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  filter: brightness(40%);
+}
+.content > *{
+  color: aliceblue;
+  padding: 10px;
+  font-family: "Roboto";
+}
+.content {
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content > h1 {
+  font-size: 40px;
+  color: orange;
+
+}
+.content > h3 {
+  text-align: center;
+}
+.blue-btn {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #55888a;
+  letter-spacing: 1px;
+}

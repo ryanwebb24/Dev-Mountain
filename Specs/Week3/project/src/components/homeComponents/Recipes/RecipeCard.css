@@ -1,0 +1,36 @@
+.recipe {
+  width: 200px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px grey;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipe > h2 {
+  font-family: "Roboto";
+  font-size: 20px;
+  padding: 10px;
+}
+.recipe > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.recipe > a > button {
+  font-family: "Roboto";
+  margin: 10px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #55888a;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}

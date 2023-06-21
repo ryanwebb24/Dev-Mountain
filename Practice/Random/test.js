@@ -1,0 +1,2 @@
+let ans = typeof null
+

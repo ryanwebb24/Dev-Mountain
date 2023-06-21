@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #db7533;
+}
+header > h2 {
+  padding: 20px;
+  font-size: 30px;
+  color: aliceblue;
+  font-family: "Roboto";
+}
+nav > a > button {
+  border: none;
+  background-color: #db7533;
+  height: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: aliceblue;
+}
+nav > a > button:hover {
+  background-color: #b5622b;
+}
