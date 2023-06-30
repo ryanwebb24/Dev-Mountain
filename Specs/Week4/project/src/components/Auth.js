@@ -1,20 +1,28 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import axios from "axios"
+import AuthContext from "../store/authContext"
 
 const Auth = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [register, setRegister] = useState(true)
+  const autCtx = useContext(AuthContext)
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault()
     const body = {
         username,
         password
     }
-    axios.post(`https://socialmtn.devmountain.com/${ register ? "register" : "login" }`, body)
-    .then(res => console.log(res.data))
-    .catch(err => console.log(err))
+    axios.post(`http://localhost:4001/${ register ? "register" : "login" }`, body)
+    .then(res => {
+      autCtx.login(res.data.token, res.data.userId, res.data.exp)
+    })
+    .catch(err => {
+      setPassword("")
+      setUsername("")
+      console.log(err)
+    })
   }
   return (
     <main>
